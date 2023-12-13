@@ -13,7 +13,7 @@ namespace Composicao_Enumeracao
             Console.WriteLine("Enter worker data:");
             Console.Write("Name: ");
             string name = Console.ReadLine();
-            Console.Write("Lvel (Junior/Midlevel/Senior): ");
+            Console.Write("Level (Junior/Midlevel/Senior): ");
             WorkerLevel level = Enum.Parse<WorkerLevel>(Console.ReadLine());
             Console.Write("Base salary: ");
             double baseSalary = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -35,7 +35,6 @@ namespace Composicao_Enumeracao
 
                 HourContract contract = new HourContract(date, valuePerHour, hours);
                 worker.AddContract(contract);
-
 
             }
 
